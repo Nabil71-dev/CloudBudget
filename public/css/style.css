@@ -1,0 +1,123 @@
+/*                               common styles                              */
+.logo,.navbar,.button
+{
+    line-height: 6vh;
+}
+.banner_heading,.banner_paragraph,.video_heading,.video_paragraph
+{
+    padding-top:5vh;
+}
+.banner_container
+{
+    text-align:center;
+}
+.logo,.banner_paragraph
+{
+    font-size: 1.25rem;  
+}
+.banner_button,.video_button
+{
+    color: #ED4C5C;
+}
+.banner_button,.video_button
+{
+     margin-top:4vh;
+}
+.banner,.video_container
+{
+    padding-top:15vh;
+}
+/*                               Landing Page                               */
+.landingPage
+{
+    background-image: linear-gradient(to right,rgba(213,32,71,0.8),rgba(238,61,27,0.8)),url(./img/LandinPage_BG.jpg);
+    height:100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#ffffff;
+}
+.header
+{
+    padding-top: 6vh;
+}
+.logo
+{
+    flex-basis:23.2%;
+}
+.navbar
+{
+    flex-basis:50.2%;
+}
+.button
+{
+    flex-basis:22.2%;
+}
+.navbar ul
+{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+}
+.navbar a,.language_select_button a
+{
+    text-decoration: none;
+    color:#ffffff;
+}
+.navbar a:hover
+{
+    font-weight: 900;
+}
+.language_select_button button
+{
+    width:6rem;
+    border: .1px solid white;
+    float:right;
+}
+.button_flag
+{
+    height: 1.5rem;
+    width:1.5rem;
+    transform: translate(-3px,5px);
+}
+.language_select_button a
+{
+    padding-left:3.5rem;
+}
+.banner_container
+{
+    height:30vh;
+    flex-basis: 50%;
+    margin:0rem auto;
+}
+.banner_heading
+{
+    font-size: 4.5rem;
+}
+.banner_button
+{
+    background-color:#f8f8f8;
+    width:7.5rem;
+    height:2.5rem;
+}
+
+/*                               Video Page                               */
+.video
+{
+    height:72vh;
+}
+.video_heading
+{
+    font-size: 2.25rem;
+}
+.video_card
+{
+    height:40vh;
+    flex-basis: 49.8%;
+}
+.play_button {
+    height: 3.4rem;
+    width: 3.4rem;
+    border-radius: 50%;
+    background-color:rgba(237,76,92,1);
+    transform: translate(-29.5rem,-9.5rem);
+}

@@ -1,0 +1,15 @@
+.container
+{
+    width:80%;
+    margin:0rem auto; 
+}
+.row
+{
+    display:flex;
+    flex-wrap:wrap;
+}
+.col
+{
+    flex-basis:0;
+    margin-right: .3vh;
+}
