@@ -1,31 +1,108 @@
-/*                               common styles                              */
+/*                           Multi Time Used style                              */
+.landingPage,.app_download,.navbar a,.language_select_button a,
+.language_select_button button,.contact_button
+{
+    color:#ffffff;
+}
 .logo,.navbar,.button
 {
     line-height: 6vh;
 }
-.banner_heading,.banner_paragraph,.video_heading,.video_paragraph
+.navbar ul,.footer_nav
+{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+}
+.navbar a,.language_select_button a,.footer_nav a
+{
+    text-decoration: none;
+}
+.banner_heading,.banner_paragraph,.video_heading,
+.video_paragraph,.section_title,.overview_sub_card2 h1,
+.overview_sub_card2 button,.app_download_card_heading,
+.app_download_card_paragraph,.contact_card_paragraph
 {
     padding-top:5vh;
 }
-.banner_container
+.banner_container,.section_title,.overview_sub_card1,
+.overview_sub_card2,.features_card
 {
     text-align:center;
 }
-.logo,.banner_paragraph
+.logo,.banner_paragraph,.overview_sub_card2 h1,
+.Features_card_heading,.footer_card h1
 {
     font-size: 1.25rem;  
+    font-weight: 600;
 }
-.banner_button,.video_button
+.banner_button,.video_button,.overview_sub_card2 button
 {
     color: #ED4C5C;
 }
-.banner_button,.video_button
+.banner_button,.video_button,.features_card,
+.app_download_card_icons
 {
      margin-top:4vh;
 }
-.banner,.video_container
+.banner,.video_container,.app_download_container,
+.contact_containetr
 {
     padding-top:15vh;
+}
+.banner_button,.contact_button
+{
+    width:8rem;
+    height:2.8rem;
+}
+.video,.features,.app_download,.contact
+{
+    height:72vh;
+}
+.video_card,.app_download_card,.contact_card
+{
+    height:40vh;
+    flex-basis: 49.8%;
+}
+.video_heading,.section_title,.app_download_card_heading,
+.contact_card_heading
+{
+    font-size: 2.25rem;
+}
+.overview_sub_card1,.overview_sub_card2
+{
+    border-radius: 14px;
+    margin:.3rem auto;
+}
+.features_card,.footer_card
+{
+    height:40vh;
+    flex-basis:24.8%;
+}
+.CSV_heading,.features_card p
+{
+    padding-top:1rem;
+}
+.app_download_card_bg2,.app_download_card_bg
+{
+    position: absolute;
+}
+.app_download,.contact_button,.play_button
+{
+    background:#ED4C5C;
+}
+.first_name,.last_name
+{
+  width: 48%;
+  margin-right: .5rem;
+}
+.phone_no,.services
+{
+  width:98%;
+}
+.footer_nav a,.footer_card_contact div,.footer_card_contact p
+{
+    margin-top: .8vh;
 }
 /*                               Landing Page                               */
 .landingPage
@@ -34,7 +111,6 @@
     height:100vh;
     background-size: cover;
     background-attachment: fixed;
-    color:#ffffff;
 }
 .header
 {
@@ -51,17 +127,6 @@
 .button
 {
     flex-basis:22.2%;
-}
-.navbar ul
-{
-    list-style: none;
-    display:flex;
-    justify-content: space-around;
-}
-.navbar a,.language_select_button a
-{
-    text-decoration: none;
-    color:#ffffff;
 }
 .navbar a:hover
 {
@@ -96,28 +161,117 @@
 .banner_button
 {
     background-color:#f8f8f8;
-    width:7.5rem;
-    height:2.5rem;
 }
 
 /*                               Video Page                               */
-.video
-{
-    height:72vh;
-}
-.video_heading
-{
-    font-size: 2.25rem;
-}
-.video_card
-{
-    height:40vh;
-    flex-basis: 49.8%;
-}
 .play_button {
     height: 3.4rem;
     width: 3.4rem;
     border-radius: 50%;
-    background-color:rgba(237,76,92,1);
     transform: translate(-29.5rem,-9.5rem);
+}
+
+/*                               Overview Page                               */
+.overview
+{
+    height:85vh;
+    background: #FAFAFA;
+}
+.overview_card
+{
+    flex-basis:33.142%;
+    height:60vh;
+}
+.overview_sub_card1
+{
+    width:98%;
+    height:55%;
+}
+.overview_sub_card2
+{
+    transform: translateY(-32%);
+    width:80%;
+    height:50%;
+    background-color: #ffffff;
+    box-shadow: -5px 10px 10px #0e0e0e15;
+}
+.container_sub_card2
+{
+    width:90%;
+    margin:0rem auto;
+}
+.overview_card1
+{
+    background-image: url(./img/Features_card1_Bg.png);
+}
+.overview_card2
+{
+    background-image: url(./img/Features_card2_Bg.png);
+}
+.overview_card3
+{
+   background-image: url(./img/Features_card3_Bg.png);
+}
+.overview_sub_card2 p{
+    padding-top:1rem;
+}
+
+/*                               Features Page                               */
+.features_card_digit
+{
+    font-size: 6rem;
+    color:rgba(16, 16, 16, 0.08);
+    height:8vh;
+}
+.features_card_bg
+{
+    width:3rem;
+    height:4rem;
+}
+.CSV_logo
+{
+    width:2rem;
+    height:3rem;
+    transform: translateY(.5rem);
+}
+
+/*                              App Download Page                               */
+.app_download_card_icons img
+{
+    margin-right: .7rem;
+}
+.app_download_card_bg2
+{ 
+    transform: translate(-60%,0%);
+}
+.app_download_card_bg
+{   
+    transform: translate(10%,-95%);
+}
+
+/*                              Contact Page                               */
+input
+{
+    height:6.8vh;
+    border:1px rgb(0, 0, 0) solid;
+    margin-bottom: 2vh; 
+}
+.contact_button
+{
+    background:#ED4C5C;
+    margin-top: 1.2vh;
+}
+
+/*                                 Footer                                   */
+.footer_card h1
+{
+    margin-bottom: 3vh; 
+}
+.footer_nav
+{
+    flex-direction: column;
+}
+.footer_nav a
+{
+    color:#000000; 
 }

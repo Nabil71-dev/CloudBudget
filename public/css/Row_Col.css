@@ -13,3 +13,8 @@
     flex-basis:0;
     margin-right: .3vh;
 }
+.section_title
+{
+    flex-basis: 99.8%; 
+    margin-bottom: 6vh;
+}
